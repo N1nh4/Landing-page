@@ -17,14 +17,11 @@
         display: flex;
         flex-direction: column;
         padding: 40px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
         width: 60%;
         height: 255px;
         background-color: white;
         border-radius: 20px;
+        min-width: 320px;
        
     }
 
@@ -55,6 +52,15 @@
     
     }
 
+    span{
+        font-size: 12px;
+    }
+
+    input[type="email"]{
+        width: calc(100% - 26px);
+    
+    }
+    
     img#fundo-direita  {
         width: 100%;
         margin-top: -5px;

@@ -92,6 +92,10 @@ input[type="email"]:focus {
     border: 1px solid var(--tomato);
 }
 
+input[type="email"] {
+    width: 93%;
+}
+
 input[type="submit"] {
     border: none;
     box-shadow: 0 5px 2px rgba(36, 35, 35, 0.655);
