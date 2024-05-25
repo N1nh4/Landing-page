@@ -1,0 +1,78 @@
+@media screen and (max-width: 850px) {
+
+    div#centro {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 20px;
+        height: auto;
+        width: 60%;
+        min-width: 320px;
+        justify-content: flex-end;
+    }
+
+  
+
+    div#sucesso {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 255px;
+        background-color: white;
+        border-radius: 20px;
+       
+    }
+
+    div#sucesso > button {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 12px;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,  #FF5572, #FE693E  );
+        color: var(--white);
+        border: none;
+        box-shadow: 0 5px 2px rgba(36, 35, 35, 0.655);
+        transition: all 0.1s ease-in;
+    }
+
+    div#esquerda {
+        width: 80%;
+    }
+
+    div#direita {
+        height: auto;
+        width: 110%;
+        margin-top: -10px;
+        border-radius: 15px;
+
+      
+    
+    }
+
+    img#fundo-direita  {
+        width: 100%;
+        margin-top: -5px;
+        box-shadow: 0 5px 2px rgba(36, 35, 35, 0.655);
+        border-radius: 29px;
+        content: url("../assets/images/illustration-sign-up-mobile.svg");
+    }
+
+    h1 {
+        font-size: clamp(32px, 5vw, 48px);
+    }
+
+    p {
+        font-size: clamp(12px, 2vw, 16px);
+    }
+
+    input[type="submit"] {
+        margin-bottom: 10px;
+
+    }
+}

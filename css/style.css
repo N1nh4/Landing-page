@@ -44,10 +44,9 @@ div#sucesso {
 div#centro {
     display: flex;
     padding: 20px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin: 100px auto;
+    box-sizing: border-box;
+    overflow: hidden;
     width: 772px;
     height: 500px;
     background-color: white;
@@ -95,14 +94,20 @@ input[type="email"]:focus {
 
 input[type="submit"] {
     border: none;
+    box-shadow: 0 5px 2px rgba(36, 35, 35, 0.655);
+    transition: all 0.1s ease-in;
 }
+
+
+input[type="submit"]:active {
+transform: translateY(5px);
+box-shadow: 0 0px 5px rgba(36, 35, 35, 0.655);
+}
+
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
+    
 }
 .attribution a { color: hsl(228, 45%, 44%); }
