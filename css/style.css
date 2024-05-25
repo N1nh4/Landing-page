@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('..assets/fonts/Roboto-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+body {
+    background-color: #36384D;
+  
+}
+:root {
+    --roboto-regular: 'roboto-regular';
+    --roboto-bold: 'roboto-bold';
+
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+h1 {
+    margin: 0px;
+    margin-top: 10px;
+    font-family: var(--roboto-bold);
+    color: #36384D;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+p {
+    font-family: var(--roboto-regular);
+}
+
+div#sucesso {
+    display: none;
+}
+
+div#centro {
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 772px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+   
+}
+
+div#centro > div#esquerda > div#img > p > img {
+    float: left;
+    margin-right: 15px;
+}
+
+div#centro > div#esquerda > div#img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+div#esquerda {
+   
+    padding: 30px;
+}
+
+div#direita > img{
+    height: 100%;
+}
+
+form > input {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+span#verificar {
+    display: none;
+    float: right;
+    color: var(--tomato);
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border: 1px solid var(--tomato);
+}
+
+input[type="submit"] {
+    border: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.attribution a { color: hsl(228, 45%, 44%); }

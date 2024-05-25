@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('..assets/fonts/Roboto-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #36384D;
+  
+}
+
+p {
+    font-family: var(--roboto-regular);
+    font-size: 16px;
+}
+
+:root {
+    --roboto-regular: 'roboto-regular';
+    --roboto-bold: 'roboto-bold';
+
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+div#sucesso {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    height: 325px;
+    background-color: white;
+    border-radius: 20px;
+   
+}
+
+img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: var(--roboto-bold);
+    color: #36384D;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1em;
+}
+
+div#sucesso > button {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,  #FF5572, #FE693E  );
+    color: var(--white);
+    border: none;
+}
