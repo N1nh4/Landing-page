@@ -85,6 +85,7 @@ span#verificar {
     display: none;
     float: right;
     color: var(--tomato);
+    font-size: clamp(10px, 2vw, 14px);
 }
 
 input[type="email"]:focus {
